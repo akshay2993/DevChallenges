@@ -92,4 +92,4 @@ $ npm start
 - Twitter [@your-twitter](https://{twitter.com/your-username})
 
 ## NEW EDIT
-- edit1
+- edit1 on github
