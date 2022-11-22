@@ -1,41 +1,128 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*, *::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-app{
+  padding: 30px 60px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.main-title{
+  margin-bottom: 50px;
+  color: rgb(132, 130, 130);
+  font-weight: 500;
 }
 
-.card {
-  padding: 2em;
+.row{
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
-.read-the-docs {
-  color: #888;
+.btn-container{
+  min-width: 200px;
+}
+
+.hover{
+  color: gray;
+}
+.btn{
+  margin-top: 16px;
+  /* border: none; */
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.btn.default{
+  background: lightgray;
+  box-shadow: 1px 2px 4px 0 gray;
+}
+
+.btn.default-hover{
+  background: darkgray;
+  box-shadow: 1px 2px 4px 0 rgb(183, 182, 182);
+}
+
+.btn.outline{
+  background: white;
+  border: 1px solid rgb(28, 77, 212);
+  color: rgb(28, 77, 212);
+}
+.btn.outline-hover{
+  background: rgba(114, 145, 229, 0.386);
+  border: 1px solid rgb(28, 77, 212);
+  color: rgb(28, 77, 212);
+}
+.btn.text{
+  border: none;
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  color: rgb(28, 77, 212);
+}
+.btn.text-hover{
+  border: none;
+  background-color: transparent;
+  color: rgb(28, 77, 212);
+  background: rgba(114, 145, 229, 0.386)
+}
+.btn.primary-btn{
+  background: rgb(28, 77, 212);
+  color: white;
+}
+.btn.primary-btn-hover{
+  background: rgb(21, 62, 174);
+  color: white;
+}
+.btn.secondary-btn{
+ background: darkslategray;
+ color: white;
+}
+.btn.secondary-btn-hover{
+  background: rgb(33, 55, 55);
+  color: white;
+ }
+.btn.danger-btn{
+  background: rgb(204, 67, 46);
+  color: white;
+}
+.btn.danger-btn-hover{
+  background: rgb(142, 45, 30);
+  color: white;
+}
+.disableShadow{
+  box-shadow: none;
+}
+.btn.text:disabled{
+  color: gray;
+  background: none;
+}
+.btn:disabled{
+  background: lightgray;
+}
+.start-icon{
+  margin-right: 10px;
+}
+.end-icon{
+  margin-left: 10px;
+}
+.btn-sm{
+  padding: 6px 8px;
+}
+.btn-lg{
+  padding: 15px 26px;
 }
